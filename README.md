@@ -23,8 +23,9 @@ The work includes creating a PostgreSQL database, designing tables, inserting sa
 
 * `create_tables.sql` – Database structure (tables)
 * `queries.sql` – All required SQL queries for the assignment
-* `seeding_data.sql` – Sample dataset for testing
+* `seed_data.sql` – Sample dataset for testing
 * `README.md` – Overview and instructions
+* `results` – folder with screenshoots of done dataset 
 
 This project serves as a complete example of SQL query writing, relational database design, and practical analysis tasks using PostgreSQL.
 
