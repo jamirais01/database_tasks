@@ -66,7 +66,7 @@ WHERE comp.completion_time > '2025-01-01';
 
 
 
--- Option A - LEFT JOIN
+
 SELECT
     s.student_name,
     s.major
@@ -74,7 +74,7 @@ FROM Student s
 LEFT JOIN Credits cr ON s.student_id = cr.student_id
 WHERE cr.credits_earned IS NULL;
 
--- Option B - NOT IN
+
 SELECT
     s.student_name,
     s.major

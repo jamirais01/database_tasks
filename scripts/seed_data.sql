@@ -8,7 +8,6 @@ DELETE FROM Course;
 
 
 
--- 1. COURSES
 INSERT INTO Course (course_name, course_description) VALUES
 ('Database Systems', 'Introduction to relational databases and SQL.'),
 ('Web Development', 'Front-end and back-end web programming.'),
@@ -16,7 +15,7 @@ INSERT INTO Course (course_name, course_description) VALUES
 ('Operating Systems', 'Processes, memory, and system architecture.'),
 ('Networking Basics', 'Fundamentals of computer networks.');
 
--- 2. TASKS
+
 INSERT INTO Task (task_name) VALUES
 ('SQL Basics'),
 ('Joins Practice'),
@@ -26,7 +25,7 @@ INSERT INTO Task (task_name) VALUES
 ('Memory Management Lab'),
 ('Network Configuration Task');
 
--- 3. ASSIGNMENTS (connect tasks + courses)
+
 INSERT INTO Assignment (task_id, course_id) VALUES
 (1, 1),  -- SQL Basics → Database Systems
 (2, 1),  -- Joins Practice → Database Systems
@@ -36,7 +35,7 @@ INSERT INTO Assignment (task_id, course_id) VALUES
 (6, 4),  -- Memory Lab → Operating Systems
 (7, 5);  -- Network Config → Networking
 
--- 4. STUDENTS
+
 INSERT INTO Student (student_name, major) VALUES
 ('Alice Johnson', 'Computer Science'),
 ('Bob Smith', 'Information Technology'),
@@ -45,7 +44,7 @@ INSERT INTO Student (student_name, major) VALUES
 ('Elias Rami', 'Computer Networks');
 
 
--- 5. COMPLETIONS (students finishing assignments)
+
 INSERT INTO Completion (assignment_id, student_id, completion_time) VALUES
 (1, 1, '2024-12-20 10:00:00'),
 (2, 1, '2025-01-10 15:00:00'),
@@ -54,7 +53,7 @@ INSERT INTO Completion (assignment_id, student_id, completion_time) VALUES
 (6, 3, '2025-01-15 08:20:00'),
 (7, 5, '2024-12-18 13:50:00');
 
--- 6. CREDITS (grades earned by students)
+
 INSERT INTO Credits (student_id, course_id, grade, credits_earned) VALUES
 (1, 1, 4.0, 5),
 (1, 2, 3.5, 5),
